@@ -46,22 +46,25 @@ CREATE TABLE RETAIL_SALES (
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
 
 ```sql
+-- How many sales we have ? 
 SELECT
 	COUNT(TOTAL_SALES) AS TOTAL_SALES
 FROM
 	RETAIL_SALES;
 
+-- how many unique customer we have  ?
 SELECT
 	COUNT(DISTINCT CUSTOMER_ID) AS TOTAL_SALES
 FROM
 	RETAIL_SALES;
 
-
+-- How many category we have  ?
 SELECT DISTINCT
 	CATEGORY
 FROM
 	RETAIL_SALES;
 
+-- Check Data Is NULL
 SELECT
 	*
 FROM
